@@ -8,7 +8,7 @@ import {AllpostesService} from '../allpostes.service';
 })
 export class HomeComponent implements OnInit {
  blogs: any = [] ;
-
+ filterName = '';
   constructor(private getEl: AllpostesService ) { }
 
   ngOnInit() {

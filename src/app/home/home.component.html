@@ -5,9 +5,11 @@
   </div>
 
   <div class="row">
+<input class="form-control " type ="text" placeholder="search .. " [(ngModel)]="filterName" width="120px" style="margin-bottom: 20px">
 
 
-      <div class="card"*ngFor="let blog of blogs" style="margin-right: 10px">
+
+      <div class="card"*ngFor="let blog of blogs | filter:filterName:'title'" style="margin-right: 10px">
         <img class="card-img-top" src="{{blog.thumbnailUrl}}" alt="{{blog.title}}" style="width:100%">
         <div class="card-body">
           <h4 class="card-title"> {{blog.title}}</h4>

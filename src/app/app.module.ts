@@ -13,13 +13,19 @@ import { BlogItemComponent } from './blog-item/blog-item.component';
 import { AboutComponent } from './about/about.component';
 import { AllpostesService } from './allpostes.service';
 import { BlogService } from './blog-item/blog.service';
+import { FilterPipe } from './home/filter.pipe';
+import { RegisterComponent } from './auth/register/register.component';
+import { LoginComponent } from './auth/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     BlogItemComponent,
-    AboutComponent
+    AboutComponent,
+    FilterPipe,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
